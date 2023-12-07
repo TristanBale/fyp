@@ -1,0 +1,53 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: ts_datamodule.yaml
+  # - override /model: transformer.yaml
+  # - override /model: cnn.yaml
+  - override /model: bilstm.yaml
+  - override /callbacks: default.yaml
+  - override /trainer: default.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# tags: ["UCR_SpokenArabicDigits", "transformer"]
+# tags: ["UCR_SpokenArabicDigits", "cnn"]
+tags: ["UCR_SpokenArabicDigits", "bilstm"]
+
+seed: 1234
+
+trainer:
+  min_epochs: 50
+  max_epochs: 300
+  accelerator: gpu
+
+model:
+  optimizer:
+    _target_: torch.optim.Adam
+    lr: 0.001
+    weight_decay: 0
+  net:
+    dropout: 0              
+    # d_model: 128
+    # nhead: 4
+    # dim_feedforward: 128
+    # mlp_dim: 128
+    # nlayers: 4
+    cell_array:
+      - 32
+      - 64
+      - 64
+      - 32
+    # kernel_size: 3
+
+datamodule:
+  data_dir: ${paths.data_dir}/SpokenArabicDigits
+  feature_name: signal
+  target_name: target
+  id_name: noun_id
+  train_batch_size: 64
+  val_batch_size: 1

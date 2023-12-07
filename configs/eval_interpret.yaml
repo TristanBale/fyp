@@ -1,0 +1,48 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - datamodule: ts_datamodule.yaml # choose datamodule with `test_dataloader()` for evaluation
+  - model: transformer.yaml
+  - logger: null
+  - trainer: default.yaml
+  - paths: default.yaml
+  - extras: default.yaml
+  - hydra: default.yaml
+
+task_name: "PenDigits_interpret"
+
+tags: ["dev"]
+
+# passing checkpoint path is necessary for evaluation interpretability results
+# ckpt_path: ???
+
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-06-10_06-14-11/4/checkpoints/epoch_266.ckpt # Transformer + syn snr20
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-06-19_01-18-17/19/checkpoints/epoch_295.ckpt # BiLSTM + syn snr20
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-06-21_02-52-20/18/checkpoints/epoch_155.ckpt # CNN + syn snr20
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-06-23_03-24-44/checkpoints/epoch_285.ckpt # BiLSTM + syn
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-06-24_07-42-47/checkpoints/epoch_251.ckpt # BiLSTM + syn_nmi
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/runs/synthetic_transformer/checkpoints/epoch_291.ckpt # Transformer + syn
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-06-27_02-14-25/checkpoints/epoch_230.ckpt # CNN + syn
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-07-28_06-24-24/checkpoints/epoch_248.ckpt # Transformer + earth_500_45
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-07-29_07-53-29/checkpoints/epoch_105.ckpt # BiLSTM + earth_500_45
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-07-28_06-24-24/checkpoints/epoch_248.ckpt # labearth
+
+# syn_noise_comparison
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/syn_train/runs/syn_10percent/checkpoints/epoch_175.ckpt
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/syn_train/runs/syn_10percent_snr20/checkpoints/epoch_066.ckpt
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/syn_train/runs/syn_10percent_snr15/checkpoints/epoch_057.ckpt
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/syn_train/runs/syn_10percent_snr10/checkpoints/epoch_038.ckpt
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/syn_train/runs/syn_10percent_snr5/checkpoints/epoch_034.ckpt
+
+# syn cnn
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/syn_train/runs/syn_10percent_cnn/checkpoints/epoch_183.ckpt
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/syn_train/runs/syn_10percent_cnn_snr20/checkpoints/epoch_176.ckpt
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/syn_train/runs/syn_10percent_cnn_snr15/checkpoints/epoch_129.ckpt
+
+# ucr dataset
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_LSST_train/runs/2023-09-08_07-24-06/checkpoints/epoch_292.ckpt # Transformer + LSST
+ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_PenDigits_train/runs/trans/checkpoints/epoch_101.ckpt # Transformer + PenDigits
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_SpokenArabicDigits_train/runs/2023-09-13_03-27-07/checkpoints/epoch_114.ckpt # Transformer + SpokenArabicDigits  
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_SpokenArabicDigits_train/runs/2023-09-14_09-37-45/checkpoints/epoch_124.ckpt # CNN + SpokenArabicDigits
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_SpokenArabicDigits_train/runs/2023-09-15_05-39-26/checkpoints/epoch_119.ckpt # BiLSTM + SpokenArabicDigits

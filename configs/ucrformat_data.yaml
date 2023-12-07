@@ -1,0 +1,24 @@
+# @package _global_
+
+defaults:
+  - _self_
+  # - datamodule: ts_datamodule.yaml # choose datamodule with `test_dataloader()` for evaluation
+  # - model: transformer.yaml
+  - logger: null
+  # - trainer: default.yaml
+  - paths: default.yaml
+  - extras: default.yaml
+  - hydra: default.yaml
+
+task_name: "ucrformat"
+
+tags: ["dev"]
+
+save_name: "SpokenArabicDigits"
+operations:
+    - parquet
+    - create_split
+
+properties:
+  dataset_name: "SpokenArabicDigits"
+  dataset_split: [0.85, 0.15]

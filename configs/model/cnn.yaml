@@ -1,0 +1,31 @@
+_target_: src.models.time_module.TSModule
+feature_name: ${datamodule.feature_name}
+target_name: ${datamodule.target_name}
+id_name: ${datamodule.id_name}
+save_dir: ${paths.output_dir}/datamodule
+
+optimizer:
+  _target_: torch.optim.RAdam
+  _partial_: true
+  lr: 0.001
+  weight_decay: 0.0
+
+scheduler:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: true
+  mode: min
+  factor: 0.1
+  patience: 50
+
+net:
+  _target_: src.models.components.cnn_model.CnnModel
+  input_size: 0
+  output_size: 0
+  act_fn_name: relu
+  cell_array:
+    - 32
+    - 64
+    - 64
+    - 32
+  kernel_size: 11
+  dropout: 0
