@@ -1,0 +1,297 @@
+[2023-11-22 16:07:24,772][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-11-22 16:07:24,787][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-11-22 16:07:24,982][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-11-22 16:07:27,570][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 55, in train
+    datamodule.prepare_data()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 111, in prepare_data
+    self._prepare_transform()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 272, in _prepare_transform
+    self.generate_encoder()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 413, in generate_encoder
+    with self.create_train_reader(schema_fields=[self.target_name]) as reader:
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 506, in create_train_reader
+    return make_reader(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/reader.py", line 193, in make_reader
+    return Reader(filesystem, dataset_path,
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/reader.py", line 460, in __init__
+    row_groups = dataset_metadata.load_row_groups(self.dataset)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/etl/dataset_metadata.py", line 287, in load_row_groups
+    for row_group in range(row_groups_per_file[row_groups_key]):
+KeyError: 'part-00000-173b8b4b-beab-43be-89d8-4427664f4e7d-c000.parquet:Zone.Identifier'
+[2023-11-22 16:07:27,576][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-11-22_16-07-24
+[2023-11-22 16:10:30,899][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-11-22 16:10:30,911][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-11-22 16:10:31,073][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-11-22 16:10:32,321][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 55, in train
+    datamodule.prepare_data()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 111, in prepare_data
+    self._prepare_transform()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 272, in _prepare_transform
+    self.generate_encoder()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 413, in generate_encoder
+    with self.create_train_reader(schema_fields=[self.target_name]) as reader:
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 506, in create_train_reader
+    return make_reader(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/reader.py", line 193, in make_reader
+    return Reader(filesystem, dataset_path,
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/reader.py", line 460, in __init__
+    row_groups = dataset_metadata.load_row_groups(self.dataset)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/etl/dataset_metadata.py", line 287, in load_row_groups
+    for row_group in range(row_groups_per_file[row_groups_key]):
+KeyError: 'part-00000-173b8b4b-beab-43be-89d8-4427664f4e7d-c000.parquet:Zone.Identifier'
+[2023-11-22 16:10:32,326][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-11-22_16-10-30
+[2023-11-22 16:24:14,263][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-11-22 16:24:14,277][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-11-22 16:24:14,453][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-11-22 16:24:15,757][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 55, in train
+    datamodule.prepare_data()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 111, in prepare_data
+    self._prepare_transform()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 272, in _prepare_transform
+    self.generate_encoder()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 413, in generate_encoder
+    with self.create_train_reader(schema_fields=[self.target_name]) as reader:
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 506, in create_train_reader
+    return make_reader(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/reader.py", line 155, in make_reader
+    dataset_metadata.get_schema_from_dataset_url(dataset_url_or_urls, hdfs_driver=hdfs_driver,
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/etl/dataset_metadata.py", line 402, in get_schema_from_dataset_url
+    dataset = pq.ParquetDataset(path_or_paths, filesystem=fs, validate_schema=False, metadata_nthreads=10)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1784, in __init__
+    self._metadata_path) = _make_manifest(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2271, in _make_manifest
+    raise OSError('Passed non-file path: {}'
+OSError: Passed non-file path: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/data//earth_500_45/train
+[2023-11-22 16:24:15,764][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-11-22_16-24-14
+[2023-11-22 16:26:18,745][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-11-22 16:26:18,759][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-11-22 16:26:18,917][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-11-22 16:27:30,538][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2023-11-22 16:27:30,789][__main__][INFO] - Instantiating callbacks...
+[2023-11-22 16:27:30,791][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-11-22 16:27:30,802][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2023-11-22 16:27:30,805][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-11-22 16:27:30,807][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-11-22 16:27:30,810][__main__][INFO] - Instantiating loggers...
+[2023-11-22 16:27:30,811][src.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-11-22 16:27:30,817][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-11-22 16:27:31,328][__main__][INFO] - Logging hyperparameters!
+[2023-11-22 16:27:31,795][__main__][INFO] - Starting training!
+[2023-11-22 16:28:56,027][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-11-22 16:28:56,039][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-11-22 16:28:56,174][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-11-22 16:30:10,851][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2023-11-22 16:30:10,960][__main__][INFO] - Instantiating callbacks...
+[2023-11-22 16:30:10,961][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-11-22 16:30:10,970][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2023-11-22 16:30:10,974][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-11-22 16:30:10,976][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-11-22 16:30:10,979][__main__][INFO] - Instantiating loggers...
+[2023-11-22 16:30:10,980][src.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-11-22 16:30:10,987][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-11-22 16:30:11,495][__main__][INFO] - Logging hyperparameters!
+[2023-11-22 16:30:11,699][__main__][INFO] - Starting training!
+[2023-11-22 19:33:55,815][__main__][INFO] - Starting testing!
+[2023-11-22 19:33:57,027][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 101, in train
+    trainer.test(model=model, datamodule=datamodule, ckpt_path=ckpt_path)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 706, in test
+    return call._call_and_handle_interrupt(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 749, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 935, in _run
+    results = self._run_stage()
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/trainer.py", line 971, in _run_stage
+    return self._evaluation_loop.run()
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/loops/utilities.py", line 177, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 115, in run
+    self._evaluation_step(batch, batch_idx, dataloader_idx)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/loops/evaluation_loop.py", line 380, in _evaluation_step
+    call._call_callback_hooks(trainer, hook_name, output, *step_kwargs.values())
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/trainer/call.py", line 190, in _call_callback_hooks
+    fn(trainer, trainer.lightning_module, *args, **kwargs)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/lightning/pytorch/callbacks/progress/rich_progress.py", line 523, in on_test_batch_end
+    assert self.test_progress_bar_id is not None
+AssertionError
+[2023-11-22 19:33:57,203][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-11-22_16-28-55
+[2023-12-06 06:00:14,327][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-06 06:00:14,333][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-06 06:00:14,334][src.utils.rich_utils][WARNING] - Field 'logger' not found in config. Skipping 'logger' config printing...
+[2023-12-06 06:00:14,386][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-06 06:00:34,049][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2023-12-06 06:00:34,144][__main__][INFO] - Instantiating callbacks...
+[2023-12-06 06:00:34,145][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-12-06 06:00:34,148][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2023-12-06 06:00:34,149][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-12-06 06:00:34,150][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-12-06 06:00:34,150][__main__][INFO] - Instantiating loggers...
+[2023-12-06 06:00:34,151][src.utils.instantiators][WARNING] - No logger configs found! Skipping...
+[2023-12-06 06:00:34,151][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-12-06 06:00:34,465][__main__][INFO] - Starting training!
+[2023-12-06 16:08:11,085][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-12-06_06-00-14
+[2023-12-06 17:48:01,705][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-06 17:48:01,747][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-06 17:48:01,996][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-06 17:48:02,562][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 55, in train
+    datamodule.prepare_data()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 111, in prepare_data
+    self._prepare_transform()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 272, in _prepare_transform
+    self.generate_encoder()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 413, in generate_encoder
+    with self.create_train_reader(schema_fields=[self.target_name]) as reader:
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 506, in create_train_reader
+    return make_reader(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/reader.py", line 155, in make_reader
+    dataset_metadata.get_schema_from_dataset_url(dataset_url_or_urls, hdfs_driver=hdfs_driver,
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/etl/dataset_metadata.py", line 402, in get_schema_from_dataset_url
+    dataset = pq.ParquetDataset(path_or_paths, filesystem=fs, validate_schema=False, metadata_nthreads=10)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1784, in __init__
+    self._metadata_path) = _make_manifest(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2271, in _make_manifest
+    raise OSError('Passed non-file path: {}'
+OSError: Passed non-file path: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/data//bpdata_2cls_norandom/train
+[2023-12-06 17:48:02,568][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-06_17-47-55/0
+[2023-12-06 17:48:03,120][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-06 17:48:03,131][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-06 17:48:03,252][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-06 17:48:03,263][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 55, in train
+    datamodule.prepare_data()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 111, in prepare_data
+    self._prepare_transform()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 272, in _prepare_transform
+    self.generate_encoder()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 413, in generate_encoder
+    with self.create_train_reader(schema_fields=[self.target_name]) as reader:
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 506, in create_train_reader
+    return make_reader(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/reader.py", line 155, in make_reader
+    dataset_metadata.get_schema_from_dataset_url(dataset_url_or_urls, hdfs_driver=hdfs_driver,
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/etl/dataset_metadata.py", line 402, in get_schema_from_dataset_url
+    dataset = pq.ParquetDataset(path_or_paths, filesystem=fs, validate_schema=False, metadata_nthreads=10)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1784, in __init__
+    self._metadata_path) = _make_manifest(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2271, in _make_manifest
+    raise OSError('Passed non-file path: {}'
+OSError: Passed non-file path: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/data//bpdata_2cls_norandom/train
+[2023-12-06 17:48:03,266][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-06_17-47-55/1
+[2023-12-06 17:52:18,168][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-06 17:52:18,184][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-06 17:52:18,348][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-06 17:53:40,707][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2023-12-06 17:53:40,985][__main__][INFO] - Instantiating callbacks...
+[2023-12-06 17:53:40,987][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-12-06 17:53:40,998][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2023-12-06 17:53:41,002][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-12-06 17:53:41,004][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-12-06 17:53:41,006][__main__][INFO] - Instantiating loggers...
+[2023-12-06 17:53:41,007][src.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-12-06 17:53:41,013][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-12-06 17:53:41,661][__main__][INFO] - Logging hyperparameters!
+[2023-12-06 17:53:42,127][__main__][INFO] - Starting training!
+[2023-12-06 17:54:38,984][__main__][INFO] - Starting testing!
+[2023-12-06 17:54:39,025][__main__][WARNING] - Best ckpt not found! Using current weights for testing...
+[2023-12-06 17:54:49,998][__main__][INFO] - Best ckpt path: None
+[2023-12-06 17:54:50,007][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-06_17-52-14/0
+[2023-12-06 17:54:51,288][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-06 17:54:51,305][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-06 17:54:51,644][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-06 17:55:15,678][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-06_17-52-14/1
+[2023-12-06 17:57:56,476][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-06 17:57:56,496][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-06 17:57:56,662][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-06 17:59:20,069][__main__][INFO] - Instantiating model <src.models.time_module.TSModule>
+[2023-12-06 17:59:20,255][__main__][INFO] - Instantiating callbacks...
+[2023-12-06 17:59:20,257][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-12-06 17:59:20,267][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2023-12-06 17:59:20,271][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-12-06 17:59:20,273][src.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-12-06 17:59:20,275][__main__][INFO] - Instantiating loggers...
+[2023-12-06 17:59:20,276][src.utils.instantiators][INFO] - Instantiating logger <lightning.pytorch.loggers.tensorboard.TensorBoardLogger>
+[2023-12-06 17:59:20,282][__main__][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-12-06 17:59:20,868][__main__][INFO] - Logging hyperparameters!
+[2023-12-06 17:59:21,388][__main__][INFO] - Starting training!
+[2023-12-06 18:00:30,567][__main__][INFO] - Starting testing!
+[2023-12-06 18:00:30,837][__main__][WARNING] - Best ckpt not found! Using current weights for testing...
+[2023-12-06 18:00:34,750][__main__][INFO] - Best ckpt path: None
+[2023-12-06 18:00:34,759][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-06_17-57-51/0
+[2023-12-06 18:01:09,656][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-06 18:01:09,674][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-06 18:01:09,918][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-06 18:01:10,426][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 55, in train
+    datamodule.prepare_data()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 111, in prepare_data
+    self._prepare_transform()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 272, in _prepare_transform
+    self.generate_encoder()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 413, in generate_encoder
+    with self.create_train_reader(schema_fields=[self.target_name]) as reader:
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 506, in create_train_reader
+    return make_reader(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/reader.py", line 155, in make_reader
+    dataset_metadata.get_schema_from_dataset_url(dataset_url_or_urls, hdfs_driver=hdfs_driver,
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/etl/dataset_metadata.py", line 402, in get_schema_from_dataset_url
+    dataset = pq.ParquetDataset(path_or_paths, filesystem=fs, validate_schema=False, metadata_nthreads=10)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1784, in __init__
+    self._metadata_path) = _make_manifest(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2271, in _make_manifest
+    raise OSError('Passed non-file path: {}'
+OSError: Passed non-file path: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/data//bp4features_norandom/train
+[2023-12-06 18:01:10,437][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-06_18-01-04/0
+[2023-12-06 18:01:11,166][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-06 18:01:11,171][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-06 18:01:11,287][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-06 18:01:11,301][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 55, in train
+    datamodule.prepare_data()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 111, in prepare_data
+    self._prepare_transform()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 272, in _prepare_transform
+    self.generate_encoder()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 413, in generate_encoder
+    with self.create_train_reader(schema_fields=[self.target_name]) as reader:
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 506, in create_train_reader
+    return make_reader(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/reader.py", line 155, in make_reader
+    dataset_metadata.get_schema_from_dataset_url(dataset_url_or_urls, hdfs_driver=hdfs_driver,
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/petastorm/etl/dataset_metadata.py", line 402, in get_schema_from_dataset_url
+    dataset = pq.ParquetDataset(path_or_paths, filesystem=fs, validate_schema=False, metadata_nthreads=10)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 1784, in __init__
+    self._metadata_path) = _make_manifest(
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pyarrow/parquet/core.py", line 2271, in _make_manifest
+    raise OSError('Passed non-file path: {}'
+OSError: Passed non-file path: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/data//bp4features_norandom/train
+[2023-12-06 18:01:11,304][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-06_18-01-04/1
