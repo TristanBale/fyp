@@ -42,7 +42,9 @@ tags: ["dev"]
 
 # ucr dataset
 # ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_LSST_train/runs/2023-09-08_07-24-06/checkpoints/epoch_292.ckpt # Transformer + LSST
-ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_PenDigits_train/runs/trans/checkpoints/epoch_101.ckpt # Transformer + PenDigits
+# ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_PenDigits_train/runs/trans/checkpoints/epoch_101.ckpt # Transformer + PenDigits
 # ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_SpokenArabicDigits_train/runs/2023-09-13_03-27-07/checkpoints/epoch_114.ckpt # Transformer + SpokenArabicDigits  
 # ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_SpokenArabicDigits_train/runs/2023-09-14_09-37-45/checkpoints/epoch_124.ckpt # CNN + SpokenArabicDigits
 # ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_SpokenArabicDigits_train/runs/2023-09-15_05-39-26/checkpoints/epoch_119.ckpt # BiLSTM + SpokenArabicDigits
+
+ckpt_path: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-11-22_16-28-55/checkpoints/epoch_004.ckpt
