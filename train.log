@@ -295,3 +295,57 @@ Traceback (most recent call last):
     raise OSError('Passed non-file path: {}'
 OSError: Passed non-file path: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/data//bp4features_norandom/train
 [2023-12-06 18:01:11,304][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-06_18-01-04/1
+[2023-12-14 06:09:58,218][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-14 06:09:58,223][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-14 06:09:58,283][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-14 06:10:01,216][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 55, in train
+    datamodule.prepare_data()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 111, in prepare_data
+    self._prepare_transform()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 276, in _prepare_transform
+    self.generate_scaler()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 476, in generate_scaler
+    feature_scaler.fit(reader, save_path_scaler)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/components/ts_scaler.py", line 89, in fit
+    pd.DataFrame(dict_stat).to_csv(save_path, index=False)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 709, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 481, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 115, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 642, in _extract_index
+    raise ValueError("Per-column arrays must each be 1-dimensional")
+ValueError: Per-column arrays must each be 1-dimensional
+[2023-12-14 06:10:01,218][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-14_06-09-56/0
+[2023-12-14 06:10:01,410][src.utils.utils][INFO] - Enforcing tags! <cfg.extras.enforce_tags=True>
+[2023-12-14 06:10:01,411][src.utils.utils][INFO] - Printing config tree with Rich! <cfg.extras.print_config=True>
+[2023-12-14 06:10:01,455][__main__][INFO] - Instantiating datamodule <src.datamodules.time_datamodule.TimeDataModule>
+[2023-12-14 06:10:03,929][src.utils.utils][ERROR] - 
+Traceback (most recent call last):
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/utils/utils.py", line 65, in wrap
+    metric_dict, object_dict = task_func(cfg=cfg)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/train.py", line 55, in train
+    datamodule.prepare_data()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 111, in prepare_data
+    self._prepare_transform()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 276, in _prepare_transform
+    self.generate_scaler()
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/time_datamodule.py", line 476, in generate_scaler
+    feature_scaler.fit(reader, save_path_scaler)
+  File "/home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/src/datamodules/components/ts_scaler.py", line 89, in fit
+    pd.DataFrame(dict_stat).to_csv(save_path, index=False)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pandas/core/frame.py", line 709, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 481, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 115, in arrays_to_mgr
+    index = _extract_index(arrays)
+  File "/home/tristanbale/.local/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 642, in _extract_index
+    raise ValueError("Per-column arrays must each be 1-dimensional")
+ValueError: Per-column arrays must each be 1-dimensional
+[2023-12-14 06:10:03,930][src.utils.utils][INFO] - Output dir: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/multiruns/2023-12-14_06-09-56/1
