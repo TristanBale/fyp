@@ -74,7 +74,7 @@ def combine_multiple_stocks(*args):
 
     return combined_data_1, combined_data_2
 
-#(5,10,2) (5,10,2)
+
 arrayA = np.random.rand(2,2,2)
 print(arrayA)
 print('--')
@@ -86,3 +86,26 @@ x, y = combine_multiple_stocks(arrayA,arrayB)
 print(x)
 print('--')
 print(y)
+
+# import pandas as pd
+
+# # Example DataFrames
+# nasdaq_pd_featuresEMA_RSI = pd.DataFrame({
+#     'Date': ['2023-12-01', '2023-12-02', '2023-12-03'],
+#     'RSI': [70, 65, 72],
+#     # ... other columns
+# })
+
+# a = pd.DataFrame({
+#     'MACD1': [1.5, 2.0, 1.8],
+#     'MACD2': [2.5, 1.9, 2.2],
+#     'MACD3': [1.2, 2.1, 1.6]
+#     # ... other columns
+# })
+
+# if len(a) == len(nasdaq_pd_featuresEMA_RSI):
+#     nasdaq_pd_featuresEMA_RSI = pd.concat([nasdaq_pd_featuresEMA_RSI, a], axis=1)
+# else:
+#     print("Length of DataFrame 'a' does not match the length of the DataFrame.")
+
+# print(nasdaq_pd_featuresEMA_RSI)

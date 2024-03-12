@@ -19,14 +19,16 @@ seed: 12345
 trainer:
   min_epochs: 50
   max_epochs: 300
-  accelerator: cpu
+  accelerator: gpu
 
 model:
   optimizer:
     lr: 0.002
 
 datamodule:
-  data_dir: ${paths.data_dir}/bp4features_norandom
+  data_dir: ${paths.data_dir}/bp4features_norandom 
+  #data_dir: ${paths.data_dir}/justBPstock 
+  #use this folder if wanna train original "just bp" training data
   feature_name: signal
   target_name: target
   id_name: noun_id

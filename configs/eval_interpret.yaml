@@ -1,3 +1,5 @@
+#Edit this file to change path location of Best checkpoint obtained after training to be used by interpretation framework 
+
 # @package _global_
 
 defaults:
@@ -47,4 +49,4 @@ tags: ["dev"]
 # ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_SpokenArabicDigits_train/runs/2023-09-14_09-37-45/checkpoints/epoch_124.ckpt # CNN + SpokenArabicDigits
 # ckpt_path: /home/TimeSeries-Interpretability-Robustness/logs/UCR_SpokenArabicDigits_train/runs/2023-09-15_05-39-26/checkpoints/epoch_119.ckpt # BiLSTM + SpokenArabicDigits
 
-ckpt_path: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-11-22_16-28-55/checkpoints/epoch_004.ckpt
+ckpt_path: /home/tristanbale/wsl_coding/TimeSeries-Interpretability-Robustness/logs/train/runs/2023-12-28_19-48-24/checkpoints/epoch_036.ckpt

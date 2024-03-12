@@ -1,3 +1,5 @@
+# Edit this file to change label class. Binary vs Multiclass, if mulitclass, uncomment score_x0_2 for the 3 instances it appears
+
 from typing import Any, List
 
 import torch
@@ -55,9 +57,9 @@ class TSModule(pl.LightningModule):
         self.criterion = torch.nn.CrossEntropyLoss()
 
         # metric objects for calculating and averaging accuracy across batches
-        # self.train_acc = Accuracy(task="multiclass", num_classes=10)
-        # self.val_acc = Accuracy(task="multiclass", num_classes=10)
-        # self.test_acc = Accuracy(task="multiclass", num_classes=10)
+        # self.train_acc = Accuracy(task="multiclass", num_classes=3)
+        # self.val_acc = Accuracy(task="multiclass", num_classes=3)
+        # self.test_acc = Accuracy(task="multiclass", num_classes=3)
         self.train_acc = Accuracy(task="binary", num_classes=2)
         self.val_acc = Accuracy(task="binary", num_classes=2)
         self.test_acc = Accuracy(task="binary", num_classes=2)

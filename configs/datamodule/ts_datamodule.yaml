@@ -2,13 +2,13 @@ _target_: src.datamodules.time_datamodule.TimeDataModule
 # data_dir: ${paths.data_dir}/dataset_synthetic
 # data_dir: ${paths.data_dir}/dataset_synthetic_snr20
 # data_dir: ${paths.data_dir}/dataset_synthetic_nmi
-data_dir: ${paths.data_dir}/earth_500_45
+data_dir: ${paths.data_dir}/bp4features_norandom
 save_dir: ${paths.output_dir}/datamodule
 feature_name: signal
 # target_name: target_sum
 target_name: target
 id_name: noun_id
-train_batch_size: 64
+train_batch_size: 128
 val_batch_size: 1
 inmemory_cache_all: False
 reader_worker_count: 1

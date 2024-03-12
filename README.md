@@ -92,9 +92,20 @@ python src/train.py trainer=gpu
 Train model with chosen experiment configuration from [configs/experiment/](configs/experiment/)
 
 ```bash
-python src/train.py experiment=earthquake.yaml logger=tensorboard hparams_search=optuna.yaml
+#python src/train.py experiment=earthquake.yaml logger=tensorboard hparams_search=optuna.yaml
+python src/train.py experiment=stock.yaml logger=tensorboard
 ```
 The trained results will be automatically saved to dir `logs/train/runs/<yy-mm-dd_time>/`
+
+Possible errors such as:
+    1. "Could not load library libcudnn_cnn_infer.so.8. Error: libcuda.so: cannot open shared object file: No such file or directory"
+    Solution: export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$/usr/lib/wsl/lib/libcu
+
+    2. "Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace."
+    Solution: HYDRA_FULL_ERROR=1 python <foo.py>
+
+To read checkpoint files
+    1. tensorboard --logdir logs
 
 ### 2. Generate interpretability for trained model and evaluate interpretability results
 ```bash
